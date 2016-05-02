@@ -15,7 +15,23 @@ Rather than manually expanding all panels before performing a text-search
 content to be fully visible), let this extension take care of it for you
 on document load.
 
+## How to Install it?
+
+Install it from the Google Chrome Web Store at:
+
+https://chrome.google.com/webstore/detail/confluence-auto-expander/cikcpbiockeecaeogocphgojieohacpp
+
 ## How Does It Work?
+
+At the moment, the extension uses:
+
+ * a [Content Script][1] matching any domains for the http and https URL schemes,
+ * the script then detects the tell-tale `#com-atlassian-confluence` ID to
+   ensure it runs in a Confluence wiki page,
+ * it then lookups all parent nodes for the selector
+   `.expand-control > .icon:not(.expanded)`,
+ * and finally it triggers a click on each of these parent nodes, to
+   auto-expand them.
 
 ## Caveats and Limitations
 
