@@ -1,11 +1,11 @@
 {
   "manifest_version"       : 2,
-  
+
   "name"                   : "confluence-auto-expander",
   "short_name"             : "confluence-auto-expander",
   "description"            : "A background app to auto-expand any collapsible panels in Confluence.",
-  "version"                : "0.0.1",
-  
+  "version"                : "0.0.2",
+
   "minimum_chrome_version" : "38",
 
   "author"                 : "Laurent Malvert <laurent.malvert@gmail.com>",
@@ -34,5 +34,5 @@
       ]
     }
   ]
-  
+
 }
